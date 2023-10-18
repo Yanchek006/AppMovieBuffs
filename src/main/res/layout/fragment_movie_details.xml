@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moviedetails"
+    tools:context=".ui.gallery.MovieDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="289dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="161dp"
+                    android:layout_height="242dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/poster_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/movie_year_country"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="2023, Россия"
+                            android:textColor="#EAEAEA"
+                            android:textSize="14sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            app:srcCompat="@drawable/rating_star" />
+
+                        <TextView
+                            android:id="@+id/rating_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center_vertical"
+                            android:text="7.2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:text="Люди в чёрном: Интернэшнл"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+
+
+                    <TextView
+                        android:id="@+id/movie_duration_text"
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="15sp"
+                        android:text="2 часа 15 минут"
+                        android:textColor="@color/btn"
+                        android:textSize="12sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/genres_recycleView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:spanCount="2"
+                        tools:itemCount="5"
+                        tools:listitem="@layout/movie_genre_item" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/genre1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="20sp"-->
+<!--                        android:layout_marginTop="10sp"-->
+<!--                        android:background="@drawable/border"-->
+<!--                        android:backgroundTint="@color/btn"-->
+<!--                        android:paddingHorizontal="10sp"-->
+<!--                        android:paddingVertical="5sp"-->
+<!--                        android:text="триллер"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/genre2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="20sp"-->
+<!--                        android:layout_marginTop="10sp"-->
+<!--                        android:background="@drawable/border"-->
+<!--                        android:backgroundTint="@color/btn"-->
+<!--                        android:paddingHorizontal="10sp"-->
+<!--                        android:paddingVertical="5sp"-->
+<!--                        android:text="триллер"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/genre3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="20sp"-->
+<!--                        android:layout_marginTop="10sp"-->
+<!--                        android:background="@drawable/border"-->
+<!--                        android:backgroundTint="@color/btn"-->
+<!--                        android:paddingHorizontal="10sp"-->
+<!--                        android:paddingVertical="5sp"-->
+<!--                        android:text="триллер"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Описание"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="10sp"
+                android:text="Молодая пара в компании других богатеев отправляется на эксклюзивный ужин в знаменитый ресторан, который находится на небольшом острове. Одно изысканное блюдо сменяет другое, когда выясняется, что шеф-повар и его команда неплохо изучили сегодняшних гостей и прекрасно осведомлены не только об их вкусовых предпочтениях. И кроме того, меню содержит неприятные сюрпризы."
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:text="Осталось билетов:"-->
+<!--                    android:textColor="@color/hint"-->
+<!--                    android:textSize="22sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/left_tickets_textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10sp"-->
+<!--                    android:layout_marginTop="10sp"-->
+<!--                    android:text="30"-->
+<!--                    android:textColor="@color/hint"-->
+<!--                    android:textSize="26sp" />-->
+<!--            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/buy_button"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/btn_pink"
+                android:onClick="OnBuyButtonClicked"
+                android:text="Выбрать кинотеатр"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

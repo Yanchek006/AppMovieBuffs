@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/movielist"
+    android:id="@+id/movies_fragment_container"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        app:searchIcon="@drawable/search"
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/btn"
+        app:queryHint="Поиск"
+
+        app:iconifiedByDefault="false"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timeSlots_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="86dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/product_item" />
+
+</FrameLayout>

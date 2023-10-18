@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tickets_frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/editprofile"
+    tools:context="com.moviebuffs.ui.EditUserFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/joy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentName"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Ваше имя:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <EditText
+        android:id="@+id/personNameET"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/btn"
+        android:hint="Введите новое имя"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentName" />
+
+    <TextView
+        android:id="@+id/currentEmail"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Ваш e-mail:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personNameET" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/btn"
+        android:hint="Введите новый e-mail"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentEmail" />
+
+    <TextView
+        android:id="@+id/currentPassword"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Ваш пароль:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/btn"
+        android:hint="Введите новый e-mail"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentPassword" />
+
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/btn_pink"
+        android:layout_marginTop="30dp"
+        android:text="Сохранить изменения"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/btn"
+        android:layout_marginTop="10dp"
+        android:text="Удалить аккаунт"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

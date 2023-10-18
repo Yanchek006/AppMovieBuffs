@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_movies_item"
+            android:icon="@drawable/movie_icon"
+            android:title="@string/nav_movies_title"
+            />
+        <item
+            android:id="@+id/menu_tickets_item"
+            android:icon="@drawable/ticket_icon"
+            android:iconTint="@color/white"
+            android:title="@string/nav_tickets_title"
+            />
+        <item
+            android:id="@+id/menu_edit_user_item"
+            android:icon="@drawable/profile_icon"
+            android:title="@string/nav_edit_profile_title"
+            />
+        <item
+            android:id="@+id/menu_about_item"
+            android:title="@string/nav_home_title" />
+    </group>
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Home_ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about"
+    android:textColor="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="О Нас"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lineSpacingExtra="1dp"
+            android:text="Кинотеатр MovieBuffs — это хорошие фильмы и приятная компания. Здесь нет ограничений в виде подлокотников кресла: можно удобно сесть, уютно укутаться в плед и насладиться особой атмосферой."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lineSpacingExtra="1dp"
+            android:text="Единый зал кинотеатра, напоминающий партер-амфитеатр, вмещает 288 гостей. Удобные сидения расположены ступенеобразно, что позволяет зрителям комфортно разместиться, не загораживая обзор друг другу. Рассадка «в партере» — свободная. Для комфортного просмотра фильмов есть подушки и пледы."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonToMenu"-->
+<!--            android:layout_width="320dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:background="@drawable/border"-->
+<!--            android:outlineAmbientShadowColor="@color/btn_pink"-->
+<!--            android:text="Фильмы"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="22sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
